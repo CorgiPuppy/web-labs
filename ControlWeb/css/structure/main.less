@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+
+    .paragraph-container {
+        width: 50%;
+    
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    div {
+        &#block_1 {
+            height: 200px;
+            width: 300px;
+            text-align: center;
+        }
+    
+        &#block_2 {
+            position: fixed;
+            height: 200px;
+            width: 100px;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+        }
+    
+        &#block_3 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            text-align: center;
+        }
+    
+        &#block_4 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+    }
+}
