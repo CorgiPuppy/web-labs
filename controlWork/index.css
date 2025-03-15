@@ -1,0 +1,212 @@
+@import "reset.css";
+
+div.container {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    background: #080808;
+    padding: 24px 0;
+    height: 112px;
+}
+
+header a#logo {
+    display: block;
+    float: left;
+}
+
+header form {
+    box-sizing: border-box;
+    float: left;
+    margin-left: 100px;
+    width: 660px;
+    height: 56px;
+    padding: top;
+}
+
+header form > input {
+    width: 660px;
+    height: 48px;
+    background: #1d1e20;
+    color: #636567;
+    border: none;
+    padding: 0 20px;
+    font-size: 16px;
+    padding: 0 72 0 20px;
+}
+
+header form > input:focus {
+    color: #ffffff;
+}
+
+header form > button {
+    width: 32px;
+    height: 32px;
+    background: url("img/search.png");
+}
+
+header a.header_links {
+    display: block;
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+header a#header_link_user {
+    background: url("img/user.png") ;
+}
+
+header a#header_link_cart {
+    background: url("img/cart.png");
+}
+
+main div#top_back {
+    background: url("img/back.jpg") center left;
+    background-size: cover;
+    padding: 64px 0;
+}
+
+main div#top_back h1 {
+    font-size: 72px;
+    line-height: 80px;
+    color: #f4f4f4;
+    width: 50%;
+}
+
+main div#top_back p {
+    font-size: 20px;
+    line-height: 28px;
+    color: #f4f4f4;
+    width: 50%;
+    margin-top: 24px;
+}
+
+main h2 {
+    font-size: 56px;
+    margin: 24px 0;
+}
+
+main p#services_text {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+main ul li {
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+main ul img {
+    float: left;
+}
+
+main ul div {
+    float: left;
+    margin-left: 24px;
+}
+
+main ul h3 {
+    font-size: 24px;
+    margin: 48px 0 24px 0;
+}
+
+main ul p {
+    font-size: 16px;
+}
+
+.textstyle {
+    color: #F4F4F4;
+    background-color: #148BFF;
+    border-radius: 20px;
+    width: 136px;
+    height: 24px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+main ul#list {
+    background-color: #F6F9FF;
+}
+
+main ul#list li {
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+main ul#list img {
+    float: right;
+}
+
+main ul#list div {
+    float: left;
+    margin-left: 24px;
+}
+
+main ul#list h3 {
+    font-size: 24px;
+    margin: 48px 0 24px 0;
+}
+
+main ul#list p {
+    font-size: 16px;
+}
+
+ul.dash-list {
+    list-style: none;
+}
+
+ul.dash-list li::before {
+    content: "- ";
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #080808;
+}
+
+footer > div {
+    padding: 24px 0;
+}
+
+footer div#contacts {
+    text-align: center;
+}
+
+footer div#contacts span {
+    color: #a4c8ff;
+    font-size: 16px;
+}
+
+footer div#contacts a {
+    color: #f4f4f4;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+footer hr {
+    background: #1e1e1e;
+    height: 1px;
+}
+
+footer div#copy {
+    overflow: hidden;
+}
+
+footer div#copy p {
+    display: block;
+    float: left;
+    color: #f4f4f4;
+    font-size: 16px;
+}
+
+footer div#copy span {
+    display: block;
+    float: right;
+    color: #f4f4f4;
+    font-size: 16px;
+}
