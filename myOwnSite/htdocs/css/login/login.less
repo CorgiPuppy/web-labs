@@ -1,0 +1,106 @@
+@import "../reset.css";
+@import "../vars/vars.less";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: @colorSmalt;
+}
+
+label {
+    color: @colorDarkTurquoise;
+
+    &#label-reg {
+        margin: 1rem 0;
+    }
+}
+
+a {
+    color: @colorDarkTurquoise;
+    font-weight: bold;
+    text-decoration: none;
+
+    &#a-reg {
+        color: @colorCeruleanBlue;
+        padding-left: 0.5rem;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+input {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 2rem;
+    border-bottom: 2px solid @colorDarkTurquoise;
+    outline: none;
+    background-color: @colorDarkTurquoise;
+
+    &::placeholder {
+        color: @colorSmalt;
+    }
+
+    &[type='file'] {
+        &::-webkit-file-upload-button {
+            padding: 3px;
+            color: @colorSmalt;
+            background-color: @colorPaleTurquoise;
+            border-radius: 5px;
+            border-style: hidden;
+            cursor: pointer;
+
+            &:hover {
+                background-color: @colorSmalt;
+                color: @colorPaleTurquoise;
+            }
+        }
+
+        &#file-input {
+            color: transparent;
+        }
+        
+        &::before {
+            content: 'Выберите файл '; 
+            color: @colorSmalt;
+        }
+    }
+}
+
+button {
+    padding: 1rem;
+    color: @colorDarkTurquoise;
+    background-color: @colorPaleTurquoise;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 10px @colorDarkTurquoise;
+    
+    &:hover {
+        background-color: @colorDarkTurquoise;
+        color: @colorPaleTurquoise;
+    }
+}
+
+.msg {
+    border: 2px solid @colorDarkTurquoise;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+}

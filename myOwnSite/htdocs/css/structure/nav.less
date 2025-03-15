@@ -1,0 +1,77 @@
+@import "../vars/vars.less";
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+}
+
+.link {
+    a {
+        position: relative;
+        padding-bottom: 0.75rem;
+        color: @colorDarkTurquoise;
+    }
+
+    a::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 0;
+        bottom: 0;
+        left: 0;
+        background-color: @colorCeruleanBlue;
+        transition: all 0.3s ease;
+    }
+
+    a:hover::after {
+        width: 70%;
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    h2 {
+        margin: 0;
+        color: @colorDarkTurquoise;
+        padding: 10px;
+    }
+}
+
+@media (width < 900px) {
+    nav {
+        .links {
+            flex-direction: column;
+            margin-top: 3rem;
+        }
+    }
+    
+    form {
+        flex-direction: column;    
+    }
+}

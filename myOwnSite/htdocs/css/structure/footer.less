@@ -1,0 +1,66 @@
+@import "../vars/vars.less";
+
+footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(2, 1fr);
+    grid-gap: 2rem;
+    
+    .column {
+        .logo {
+            max-width: 100px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            color: @colorDarkTurquoise;
+            margin-bottom: 2rem;
+        }
+
+        h4 {
+            color: @colorDarkTurquoise;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        a {
+            display: block;
+            color: @colorDarkTurquoise;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: @colorCeruleanBlue;
+        }
+    }
+}
+
+.copyright {
+    width: 100%;
+    padding: 8px 100px;
+    margin: auto;
+    color: @colorDarkTurquoise;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px){
+    footer {
+        grid-template-columns: 1fr 200px;
+    }
+
+    .copyright {
+        width: 100%;
+        padding: 8px 40px;
+        text-align: center;
+        color: @colorDarkTurquoise;
+    }
+}
+
+@media (width < 600px){
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
